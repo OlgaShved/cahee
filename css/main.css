@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,700,900');
+
+/* Basic styles */
+
+*, *:after, *:before {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+
+html,
+body {
+    background: #fff;
+    color:  #262626;
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    text-align: center;
+    line-height: 1.6;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a, button{
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    text-decoration: none;
+}
+
+
+/* кнопка */
+
+button,
+.btn {
+    display: block;
+    padding: 19px 25px; /* для самого маленького размерa */
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+    color: #FFF;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    line-height: 1;
+    outline:none;
+}
+
+button:hover,
+.btn:hover
+button:focus,
+.btn:focus{
+    background: #c7232f;
+    border-color: #c7232f;
+}
+
+button:active,
+.btn:active {
+    background: #fff;
+    color: #ff6033;
+}
+
+
+/* Typography */
+
+
+/* Additional styles or modificators */
+.text-left{
+    text-align: left !important;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-right{
+    text-align: right;
+}
+
+/* Grid */
+.ca-container{
+    margin: auto;
+    padding: 0 15px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+
+
+.row{
+    margin: 0 -15px;
+}
+
+.row:before,
+.row:after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+[class^="col"],
+[class*="col"]{
+    float: left;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.col-1{
+    width: 8.3333%;
+}
+
+.col-2{
+    width: 16.6666%;
+}
+
+.col-3{
+    width: 25%;
+}
+
+.col-4{
+    width: 33.3333%;
+}
+
+.col-5{
+    width: 41.6665%;
+}
+
+.col-6{
+    width: 50%;
+}
+
+.col-7{
+    width: 58.3333%;
+}
+
+.col-8{
+    width: 66.6666%;
+}
+
+.col-9{
+    width: 75%;
+}
+
+.col-10{
+    width: 83.3333%;
+}
+
+.col-11{
+    width: 91.6666%
+}
+
+.col-12{
+    width: 100%;
+}
+
+.col-offset-1{
+    margin-left: 8.3333%;
+}
+
+.col-offset-2{
+    margin-left: 16.6666%;
+}
+
+.col-offset-3{
+    margin-left: 25%;
+}
+
+.col-offset-4{
+    margin-left: 33.3333%;
+}
+
+.col-offset-5{
+    margin-left: 41.6665%;
+}
+
+.col-offset-6{
+    margin-left: 50%;
+}
+
+.col-offset-7{
+    margin-left: 58.3333%;
+}
+
+.col-offset-8{
+    margin-left: 66.6666%;
+}
+
+.col-offset-9{
+    margin-left: 75%;
+}
+
+.col-offset-10{
+    margin-left: 83.3333%;
+}
+
+.col-offset-11{
+    margin-left: 91.6666%
+}
+
+
+
+/* Header */
+.ca-header {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 0 325px;
+    background: #f9f8fb url(../img/img-bg.jpeg) no-repeat center center;
+    background-size: cover;
+}
+
+.ca-logo {
+    padding-left: 0;
+}
+
+.ca-header-view {
+   padding: 0;
+}
+
+.ca-header__name {
+    margin: 252px 0 0 -4px;
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.ca-header__text {
+    margin: 20px 0 25px;
+}
+
+.ca-header__next-link {
+    position: absolute; /* вставлена картинкой не сможем играться с цветом свг */
+    left: 48%;
+    bottom: 78px;
+    display: block;
+    transform: traslateX(-50%);
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.ca-header__next-link:hover {
+    opacity: 0.7;
+}
+
+
+.btn--first {
+    max-width: 50%;
+    margin: 0;
+    background-color:  #ff6033;
+    border: 1px solid #ff6033;
+}
+
+/* nav */
+
+.ca-nav {
+    float: right;
+    display: inline-block;
+    padding-top: 6px;
+    padding-right: 9px;
+    text-align: right;
+}
+
+.ca-nav ul {
+    padding: 0;
+    font-size: 0;
+}
+
+.ca-nav li {
+    display:inline-block;
+    list-style: none;
+    border-top: 4px solid transparent;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.9;
+    margin: 0 20px;
+    text-align: center;
+}
+
+li a {
+    color:  #262626;
+}
+
+
+ul:hover li { border-top: 4px solid transparent;}
+ul:hover li:hover { border-top: 4px solid #ff6033;}
+
+
+/* section - about */
+
+.ca-about {
+    padding: 36px 0 22px;
+    background-color: #00b1b1;
+    color: #fff;
+}
+
+.about-img {
+    margin-left: -68px;
+}
+
+.ca-container__title {
+    font-size: 90px;
+    line-height: 0.9;
+    margin: 139px 0 0;
+}
+
+
+.ca-content {
+    text-align: left;
+    margin-left: -45px;
+}
+
+.ca-container__text {
+    margin: 18px 0 0;
+    padding-right: 10px;
+}
+
+.text--margin-top {
+    margin-top: 10px;
+}
