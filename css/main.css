@@ -53,7 +53,7 @@ button,
 }
 
 button:hover,
-.btn:hover
+.btn:hover,
 button:focus,
 .btn:focus{
     background: #c7232f;
@@ -203,24 +203,26 @@ button:active,
     margin-left: 91.6666%
 }
 
-
+/* .col-offset-15{
+    margin-left: 15%;
+} */
 
 /* Header */
 .ca-header {
     position: relative;
     min-height: 100vh;
-    padding: 50px 0 325px;
+    padding: 51px 0 325px;
     background: #f9f8fb url(../img/img-bg.jpeg) no-repeat center center;
     background-size: cover;
 }
 
-.ca-logo {
+/* .ca-logo {
     padding-left: 0;
 }
 
 .ca-header-view {
-   padding: 0;
-}
+    padding: 0;
+} */
 
 .ca-header__name {
     margin: 252px 0 0 -4px;
@@ -263,7 +265,6 @@ button:active,
     float: right;
     display: inline-block;
     padding-top: 6px;
-    padding-right: 9px;
     text-align: right;
 }
 
@@ -281,6 +282,10 @@ button:active,
     line-height: 1.9;
     margin: 0 20px;
     text-align: center;
+}
+
+.ca-nav li:last-child {
+    margin: 0 0 0 20px;
 }
 
 li a {
@@ -301,7 +306,8 @@ ul:hover li:hover { border-top: 4px solid #ff6033;}
 }
 
 .about-img {
-    margin-left: -68px;
+    padding: 36px 0 48px;
+    margin-left: 10px;
 }
 
 .ca-container__title {
@@ -310,17 +316,191 @@ ul:hover li:hover { border-top: 4px solid #ff6033;}
     margin: 139px 0 0;
 }
 
+.column--padding-right {
+    padding-right: 20px;
+}
 
 .ca-content {
     text-align: left;
-    margin-left: -45px;
+    margin-left: -30px;
 }
 
 .ca-container__text {
     margin: 18px 0 0;
-    padding-right: 10px;
 }
 
 .text--margin-top {
     margin-top: 10px;
 }
+
+
+/* section3 */
+
+.ca-services {
+    padding: 36px 0 22px;
+    background-color: #70bfff;
+    color: #fff;
+}
+
+.ca-services__img {
+    position: relative;
+
+}
+.potato-img {
+    margin-left: -66px;
+    padding-top: 63px;
+    padding-left: 174px;
+}
+
+.ca-buttons {
+    margin: 142px 0 109px;
+    text-align: left;
+
+}
+
+.title-services {
+    position: absolute;
+    top: 25.3%;
+    width: 100%;
+    left: 2.6%;
+}
+
+.ca-buttons__button {
+    width: 60%;
+    height: 100px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    padding: 15px 15px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #262626;
+    line-height: 1.35;
+    background: #FFF;
+    border: 1px solid #ccc;
+    text-transform: capitalize;
+
+}
+
+.ca-buttons__btn-img {
+    width: 20%;
+    height: 100px;
+    margin-bottom: 20px;
+    margin-left: -1px;
+    background: #FFF;
+    border: 1px solid #ccc;
+}
+
+.ca-buttons__btn-img img {
+    padding-left: 10px;
+}
+
+/* GALLERY */
+
+.ca-gallery {
+    background: #ffe92f;
+}
+
+.column--pad {
+    padding: 0;
+}
+
+.img-wrap {
+    position: relative;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.img-wrap img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 28px;
+}
+
+.img-wrap .hover-img {
+    display: none;
+}
+
+.img-wrap:hover .hover-img {
+    display: inline-block;
+    position: absolute;
+    background: #00c4c4;
+    top: 0; /* в верхнем левом углу вместе с position:relative; у .img-wrap */
+    left:0;
+    right:0;
+    bottom:0;
+}
+
+.btn--second {
+    max-width: 50%;
+    margin: 0;
+    background-color:  #5585a2;
+    border: 1px solid #5585a2;
+}
+
+.title--margin {
+    margin: 0;
+    padding: 100px 0 27px;
+}
+
+.ca-gallery__info {
+    margin-bottom: 46px;
+}
+
+.ca-services__next-row {
+    margin-bottom: 22px;
+}
+
+.ca-services__last-row {
+    padding-bottom: 120px;
+}
+
+
+/* SUB */
+.ca-subscribe {
+    background: #f9f8fb url(../img/bg-white.png) no-repeat center center;
+    background-size: cover;
+}
+
+.ca-subscribe__img {
+    padding-bottom: 165px;
+}
+
+.ca-subscribe__info {
+    margin-bottom: 35px;
+    text-align: left;
+}
+
+.title--font {
+    font-size: 40px;
+    padding-bottom: 0;
+}
+
+
+input[type="email"] {
+    width:100%;
+    border:1px solid #ccc;
+    padding:16px 15px;
+    background:white;
+}
+
+input[type="submit"]{
+    width: 100%;
+    padding:16px 15px;
+    text-transform: uppercase;
+    border:1px solid #96b92c;
+    background-color: #96b92c;
+}
+
+input[type="email"]:focus,
+input[type="submit"]:focus {
+    box-shadow:0 0 5px rgba(50, 200, 255, 0.5);
+    outline:none;
+}
+
+input[type="submit"]:hover {
+    background-color: #fff;
+    color: #96b92c;
+}
+
+
+
+
