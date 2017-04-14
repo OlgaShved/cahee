@@ -575,3 +575,40 @@ input[type="submit"]:hover {
 .hover-add-by {
     font-size: 13px;
 }
+
+/* contact */
+
+.ca-contact {
+    background: #f9f8fb url(../img/bg-footer.png) no-repeat center center;
+    background-size: cover;
+}
+
+
+/* FOOTER */
+
+.ca-footer {
+    background: #262626;
+    color: #b9b9b9;
+}
+
+.ca-footer p {
+    margin: 0;
+    padding: 30px 0;
+}
+
+.footer--left {
+    text-align: left;
+}
+
+.footer--centre {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer--centre img {
+    display: inline-block;
+}
+
+.footer--right {
+    text-align: right;
+}
