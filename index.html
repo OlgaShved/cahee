@@ -16,39 +16,42 @@
 	</head>
 
 	<body>
-		<header class="ca-header ">
-			<div class="ca-container"> <!-- независимый,общий блок -->
-				<div class="main-menu row">
-					<a href="" class="ca-logo col-2">
-						<img src="img/logo.png" alt="Cahee">
-					</a>
-					<div class="ca-nav col-10">
-						<ul>
-							<li><a href="">HOME</a></li>
-							<li><a href="">ABOUT</a></li>
-							<li><a href="">SERVICES</a></li>
-							<li><a href="">GALLERY</a></li>
-							<li><a href="">BLOG</a></li>
-							<li><a href="">CONTACT</a></li>
-						</ul>
-					</div> <!-- nav -->
-				</div>
+		<section id="home">
+			<header class="ca-header">
+				<div class="ca-container"> <!-- независимый,общий блок -->
+					<div class="main-menu row">
+						<a href="" class="ca-logo col-2">
+							<img src="img/logo.png" alt="Cahee">
+						</a>
+						<div class="ca-nav col-10">
+							<ul class=menu__list>
+								<li id="homeLi"><a href="#home">HOME</a></li>
+								<li id="aboutLi"><a href="#about_us">ABOUT</a></li>
+								<li id="servicesLi"><a href="#services">SERVICES</a></li>
+								<li id="galleryLi"><a href="#gallery">GALLERY</a></li>
+								<li id="blogLi"><a href="#blog">BLOG</a></li>
+								<li id="contactLi"><a href="#contact">CONTACT</a></li>
+							</ul>
+						</div> <!-- nav -->
+					</div>
 
-				<div class=" row">
-				<div class="ca-header-view col-4 text-left">
-					<h1 class="ca-header__name">
-						Fresh life
-					</h1>
-					<p class="ca-header__text">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-					<a class="btn btn--first" href="">GET FREE NOW</a>
-				</div> <!-- ca-header-view -->
-				</div>
-			</div> <!-- container -->
+					<div class=" row">
+						<div class="ca-header-view col-4 text-left">
+							<h1 class="ca-header__name">
+								Fresh life
+							</h1>
+							<p class="ca-header__text">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+							<a class="btn btn--first" href="">GET FREE NOW</a>
+						</div> <!-- ca-header-view -->
+					</div>
 
-			<a href="#about_us" class="ca-header__next-link">
-				<img src="img/scroll.png" alt="scroll">
-			</a> <!-- scroll -->
-		</header>
+					<a href="#about_us" class="ca-header__next-link">
+						<img src="img/scroll.png" alt="scroll">
+					</a> <!-- scroll -->
+				</div> <!-- container -->
+			</header>
+		</section>
+
 
 		<main>
 			<section id="about_us" class="ca-about">
@@ -76,7 +79,7 @@
 					<div class="row">
 
 						<div class="col-offset-1 col-5">
-							<div class="ca-buttons">
+							<div class="ca-otstup ca-buttons">
 								<div class="row">
 									<button class="col-60 ca-buttons__button">Online Shopping</button>
 									<button class="col-20 col-offset-15 ca-buttons__btn-img"><img src="img/icon1.svg" alt="icon1"></button>
@@ -125,28 +128,32 @@
 									<img src="img/img1.png" alt="persik">
 									<div class="ca-gallery__hover-img"></div>
 								</div>
-							</div>
+							</div> <!-- col-8 -->
 
 							<div class="col-4">
-
-								<div class="col-12 column--pad">
-									<div class="ca-gallery__img-wrap">
-										<img src="img/img2.png" alt="lozhka">
-										<div class="ca-gallery__hover-img"></div>
+								<div class="row">
+									<div class="col-12">
+										<div class="ca-gallery__img-wrap">
+											<img src="img/img2.png" alt="lozhka">
+											<div class="ca-gallery__hover-img"></div>
+										</div>
 									</div>
-								</div>
+								</div> <!-- row -->
 
-								<div class="col-12 column--pad">
-									<div class="ca-gallery__img-wrap">
-										<img src="img/img3.png" alt="ozhina">
-										<div class="ca-gallery__hover-img"></div>
+								<div class="row">
+									<div class="col-12">
+										<div class="ca-gallery__img-wrap">
+											<img src="img/img3.png" alt="ozhina">
+											<div class="ca-gallery__hover-img"></div>
+										</div>
 									</div>
-								</div>
-							</div>
+								</div> <!-- row -->
+
+							</div> <!-- col-4 -->
 
 						</div> <!-- row -->
 
-						<div class="ca-services__next-row row">
+						<div class="ca__next-row row">
 
 							<div class="col-6">
 								<div class="ca-gallery__img-wrap">
@@ -167,7 +174,7 @@
 							<div class="col-offset-5 col-4">
 								<a class="btn btn--second" href="">VIEW MORE</a>
 							</div>
-						</div>
+						</div> <!-- row -->
 
 					</div> <!-- ca-gallery__img -->
 
@@ -191,9 +198,9 @@
 							<div class="col-2">
             					<input type="submit" value="subscribe" />
 							</div>
-						</div>
-					</div>
-				</div>
+						</div> <!-- row -->
+					</div> <!-- ca-subscribe__img -->
+				</div> <!-- container -->
 			</section> <!-- subscribe -->
 
 			<section id="blog" class="ca-blog">
@@ -307,11 +314,11 @@
 						<p>Made with <span class="right--color">love</span> by Auskteez</p>
 					</div>
 
-				</div>
-			</div>
+				</div> <!-- row -->
+			</div> <!-- container -->
 		</footer>
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="main.js"></script>
 	</body>
 </html>
-
 
